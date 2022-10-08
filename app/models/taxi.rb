@@ -1,2 +1,7 @@
 class Taxi < ApplicationRecord
-end
+    has_many :rides
+    has_many :passengers, through: :rides
+  end
+
+
+  
